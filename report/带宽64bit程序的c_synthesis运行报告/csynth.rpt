@@ -1,0 +1,25 @@
+
+
+================================================================
+== Synthesis Summary Report of 'golden_transfer'
+================================================================
++ General Information: 
+    * Date:           Tue Jul 18 15:21:50 2023
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+    * Project:        golden_transfer_hls_prj_512
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------+------+-------+---------+-----------+----------+---------+-------+----------+------+------------+-----------+------------+-----+
+    |       Modules      | Issue|       | Latency |  Latency  | Iteration|         |  Trip |          |      |            |           |            |     |
+    |       & Loops      | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined| BRAM |     DSP    |     FF    |     LUT    | URAM|
+    +--------------------+------+-------+---------+-----------+----------+---------+-------+----------+------+------------+-----------+------------+-----+
+    |+ golden_transfer   |     -|  -0.39|   276506|  2.765e+06|         -|   276507|      -|        no|     -|  336 (152%)|  4019 (3%)|  6039 (11%)|    -|
+    | o VITIS_LOOP_20_1  |    II|  -7.30|   276501|  2.765e+06|        25|       12|  23040|       yes|     -|           -|          -|           -|    -|
+    +--------------------+------+-------+---------+-----------+----------+---------+-------+----------+------+------------+-----------+------------+-----+
+
