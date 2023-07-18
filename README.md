@@ -17,7 +17,18 @@ $B = 0.272r+0.534g+0.131b (2-3)$
 ![image](https://github.com/xyc1719/golden_fliter/blob/main/img/after.png)
 
 ------
+### 使用方法
+1.将jupyter文件拷贝到pynq的根目录
 
+2.在根目录下新建文件夹overlay_golden，并把bit和hwh拷到该文件夹中
+
+3.将需要添加滤镜的视频也拷贝到根目录，重新命名为test.mp4
+
+4.打开jupyter文件运行即可实现FPGA加速视频的怀旧色滤镜添加程序
+
+*jupyter文件中还提供了用于比较运行速度的python代码块，以及集成化的用户接口
+
+------
 ### Main Problem
 在项目进行过程中，我们小组将FPGA的加速程序和python自带的卷积函数对比，发现加速效果并不明显。
 
